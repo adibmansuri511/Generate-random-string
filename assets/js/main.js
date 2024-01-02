@@ -1,14 +1,19 @@
-// program to convert first letter of a string to uppercase
+// Program to generate random strings
 
-const capitalizeFirstLetter = () => {
+const generateString = () => {
 
-    // Converting first letter to uppercase
-    let str = document.getElementById("str").value;
+    const length = parseInt(document.getElementById("length").value);
 
-    // converting first letter to uppercase
-    const capitalized = str.charAt(0).toUpperCase() + str.slice(1);
+    // Declare all characters
+    const characters = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`;
 
-    const result = `Capitalized String : ${capitalized}`;
+    const charactersLength = characters.length;
+
+    let result = "";
+
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
 
     console.log(result);
 

@@ -5,8 +5,13 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+
 }
 
 input {
     width: 100%;
+}
+
+h4 {
+    overflow-wrap: break-word;
 }
