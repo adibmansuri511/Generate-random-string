@@ -1,2 +1,2 @@
-#  generate-random-string
+# Generate-random-string
  Practice Example
